@@ -1,23 +1,12 @@
-import logo from './logo.svg';
+import WeatherDashboard from './Weather';
 import './App.css';
 
 function App() {
+  const baseUrl = process.env.REACT_APP_BASE_URL;
+  console.log({baseUrl});
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <WeatherDashboard/>
     </div>
   );
 }
